@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: honeychain-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: honeychain
+      POSTGRES_PASSWORD: honeychain_secret_password
+      POSTGRES_DB: honeychain_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: honeychain-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://honeychain:honeychain_secret_password@postgres:5432/honeychain_db
+      JWT_SECRET: honeychain-sih2026-kvic-msme-blockchain-secret-key-998811
+      POLYGON_RPC_URL: https://rpc-amoy.polygon.technology
+      CONTRACT_ADDRESS: 0x3B997a0668b5aE387532B038fAfeF49f2b80016B
+      PRIVATE_KEY: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

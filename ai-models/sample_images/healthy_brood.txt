@@ -1,0 +1,4 @@
+# Sample Frame: Healthy Brood Comb
+# Visual pattern: Concentric concentric rings of sealed capped brood with uniform golden-cappings.
+# Larvae condition: Pearly white, segmented, healthy C-shape at base of comb cells.
+# Status: HEALTHY_VERIFIED

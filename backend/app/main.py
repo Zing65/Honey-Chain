@@ -35,6 +35,7 @@ app.include_router(batches.router)
 app.include_router(sensors.router)
 app.include_router(disease.router)
 
+
 @app.on_event("startup")
 def seed_initial_demo_data():
     db = SessionLocal()
@@ -55,7 +56,6 @@ def seed_initial_demo_data():
             db.commit()
             db.refresh(beekeeper)
 
-        
         hive = db.query(Hive).filter(Hive.id == "HIVE-MZP-04").first()
         if not hive:
             hive = Hive(
@@ -71,7 +71,6 @@ def seed_initial_demo_data():
             db.add(hive)
             db.commit()
 
-        
         batch = db.query(Batch).filter(
             Batch.id == "BATCH-2026-KVIC-001").first()
         if not batch:
@@ -102,7 +101,6 @@ def seed_initial_demo_data():
             db.add(batch)
             db.commit()
 
-           
             claim1 = ResaleClaim(
                 batch_id=batch.id,
                 claimant_address="0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
@@ -126,7 +124,6 @@ def seed_initial_demo_data():
             db.add_all([claim1, claim2])
             db.commit()
 
-        
         reading = db.query(SensorReading).filter(
             SensorReading.hive_id == "HIVE-MZP-04").first()
         if not reading:

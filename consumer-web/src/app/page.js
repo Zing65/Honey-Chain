@@ -36,8 +36,8 @@ export default function Home() {
         
         <div className="text-center mb-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EBA818]/20 border border-[#EBA818]/40 text-xs font-medium text-[#6F3E14] mb-4">
-            <Award className="w-3.5 h-3.5 text-[#CF840E]" />
-            <span>SIH 2026 · Problem Statement 26021</span>
+            
+            <span>🚧 This is a visual preview. The full application is currently under active development.</span>
           </div>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#24140D] tracking-tight leading-tight">
             Trace Your Honey From Hive to Jar
