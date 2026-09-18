@@ -31,9 +31,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main Content */}
+      
       <div className="w-full max-w-2xl mx-auto px-6 py-12 flex-1 flex flex-col justify-center">
-        {/* Intro */}
+        
         <div className="text-center mb-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EBA818]/20 border border-[#EBA818]/40 text-xs font-medium text-[#6F3E14] mb-4">
             <Award className="w-3.5 h-3.5 text-[#CF840E]" />
