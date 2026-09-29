@@ -41,25 +41,25 @@ IoT-enabled hive sensors, hardware-secured data attestation, and AI-driven analy
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  Hive Edge Layer                                             │
-│  IoT Sensors (temp/humidity/weight) + TEE Attestation        │
+│  Hive Edge Layer                                              │
+│  IoT Sensors (temp/humidity/weight) + TEE Attestation         │
 │  + Hive Camera (AI disease flags) + Beekeeper Mobile App      │
 └───────────────────────────┬───────────────────────────────────┘
                             ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Backend (FastAPI)                                            │
+│  Backend (FastAPI)                                             │
 │  Ingestion & Analytics · Batch/QR Generation · Chain Anchoring │
 └───────────────────────────┬───────────────────────────────────┘
                             ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  Data & Ledger Layer                                          │
 │  PostgreSQL (operational data) · IPFS (photos/lab reports)    │
-│  Blockchain (batch hash anchors + royalty claims)              │
+│  Blockchain (batch hash anchors + royalty claims)             │
 └───────────────────────────┬───────────────────────────────────┘
                             ▼
 ┌───────────────────────────┬───────────────────────────────────┐
-│  Consumer QR Page          │  KVIC Admin Dashboard              │
-│  Batch history + proof     │  Cluster monitoring + analytics    │
+│  Consumer QR Page       │  KVIC Admin Dashboard & Farmer Dashboard │
+│  Batch history + proof  │  Cluster monitoring + analytics          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
