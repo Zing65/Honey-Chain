@@ -183,6 +183,21 @@ See [`docs/demo-script.md`](./docs/demo-script.md) for the full walkthrough.
 - [ ] Expanded AI disease-detection model trained on field-collected data
 - [ ] Mainnet migration path and gas-cost optimization
 
+### 📸 Prototype Gallery
+
+| Full Circuit & Breadboard Setup | Platform & Load Cell Integration |
+| :---: | :---: |
+| <img src="iot-simulator/All the IoT components.jpeg" width="300" alt="Full Circuit Setup"> | <img src="iot-simulator/Load cell setup with box for bees on top.jpeg" width="300" alt="Load Cell Setup"> |
+
+| Component Close-ups | |
+| :---: | :---: |
+| **HX711 Amplifier Board** | **NEO-6M GPS Module** |
+| <img src="iot-simulator/HX711 module.jpeg" width="220" alt="HX711"> | <img src="iot-simulator/gps NEO-6m.jpeg" width="220" alt="GPS Module"> |
+| **DHT22 Sensor** | **INMP441 Microphone** |
+| <img src="iot-simulator/dht22.jpeg" width="220" alt="DHT22"> | <img src="iot-simulator/INMP441 Module.jpeg" width="220" alt="INMP441 Mic"> |
+| **ESP32 Microcontroller** |
+| <img src="iot-simulator/ESP32 dev-board.jpeg" width="220" alt="ESP32"> |
+
 ## 🤝 Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes before submitting a pull request.
